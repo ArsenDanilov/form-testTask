@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="3" method="post" class="form" id="add-form">
+        <p class="form__title">Информация о компании</p>
+        <div class="form__fields">
+            <label for="companyName" class="form__label">
+                Название компании*
+                <input data-required="true" type="text" id="companyName" class="form__input">
+            </label>
+            <label for="name" class="form__label">
+                Имя*
+                <input data-required="true" type="text" id="name" class="form__input" >
+            </label>
+            <label for="surname" class="form__label">
+                Фамилия*
+                <input data-required="true" type="text" id="surname" class="form__input" >
+            </label>
+            <label for="telephoneNumber" class="form__label">
+                Телефон*
+                <input data-required="true" type="tel" id="telephoneNumber" class="form__input" >
+            </label>
+            <label for="email" class="form__label">
+                Email*
+                <input data-required="true" type="email" id="email" placeholder="Введите ваш email" class="form__input" >
+            </label>
+            <label for="website" class="form__label">
+                Сайт
+                <input type="text" id="website" class="form__input">
+            </label>
+            <label for="socialAccounts" class="form__label">
+                Аккаунты в социальных сетях
+                <input type="text" id="socialAccounts" class="form__input">
+            </label>
+        </div>
+        <p class="form__title">Информация о продукте</p>
+        <div class="form__select-list">
+            <label for="nomination-select">Номинации DairyTech Award 2024</label>
+            <select name="" id="nomination-select" class="form__select">
+                <option value="" disabled selected></option>
+                <option value="">Оборудование и технологии для производства, розлива и упаковки цельномолочной,
+                    кисломолочной групп продукции</option>
+                <option value="">Оборудование и технологии для производства, розлива, упаковки и хранения мороженого
+                </option>
+                <option value="">Оборудование и технологии для производства, розлива и упаковки продуктов сыроделия
+                    (сыры и
+                    сырные продукты)</option>
+                <option value="">Оборудование и технологии для производства, розлива и упаковки продуктов маслоделия
+                    (масло
+                    сливочное, спреды)</option>
+                <option value="">Оборудование и технологии для производства, розлива и упаковки сухих молочных продуктов
+                    и
+                    продуктов глубокой переработки молока</option>
+                <option value="">Современные упаковочные решения</option>
+                <option value="">Ингредиенты</option>
+                <option value="">
+                    Автоматизация и цифровизация технологий в молочном производстве
+                </option>
+                <option value="">
+                    Автоматизация и цифровизация бизнес-процессов в молочном производстве
+                </option>
+                <option value="">
+                    Технологии и средства контроля качества
+                </option>
+                <option value="">
+                    Моющие и дезинфицирующие средства в молочной промышленности
+                </option>
+            </select>
+        </div>
+        <div class="form__fields">
+            <label for="productName" class="form__label">
+                Название*
+                <input data-required="true" type="text" id="productName" class="form__input" >
+            </label>
+            <label for="description" class="form__label">
+                Описание*
+                <input data-required="true" type="text" id="description" class="form__input" >
+            </label>
+            <label for="otherMaterials" class="form__label">
+                Ссылка на доп. материалы (изображение, видео, документы)
+                <input type="text" id="otherMaterials" class="form__input">
+            </label>
+        </div>
+        <div class="form__agreements">
+            <label for="award-agreement" class="form__label">
+                Согласие*
+                <div class="form__checkbox-wrapper">
+                    <input data-required="true" type="checkbox" id="award-agreement" >
+                    <p>
+                        Соглашаюсь с Положением о Премии
+                    </p>
+                </div>
+            </label>
+            <a href="#" class="form__link">Положение премии</a>
+            <label for="notice-agreement" class="form__label">
+                Положение премии
+                <div class="form__checkbox-wrapper">
+                    <input type="checkbox" id="notice-agreement">
+                    <p>
+                        Я хочу оставаться в курсе информации о выставках, организуемых ООО "АйТиИ Экспо Интернешнл", и узнавать первым об открытии регистрации посетителей, специальных промокодах на получение бесплатного билета, мероприятиях деловой программы, продажах выставочных стендов, рекламных и спонсорских возможностях и даю свое согласие на получение информации рекламного характера и других актуальных для участников или посетителей сведениях любыми способами (по электронной почте, с помощью смс, через сообщения в мессенджерах и пр.). От получения такой информации я могу отказаться в любое время.
+                    </p>
+                </div>
+            </label>
+            <label for="personal-data-agreement" class="form__label">
+                Обработка персональных данных*
+                <div class="form__checkbox-wrapper">
+                    <input data-required="true" type="checkbox" id="personal-data-agreement" >
+                    <p>Согласие на обработку персональных данных</p>
+                </div>
+            </label>
+            <p class="form__description">
+                Настоящим я даю ООО «АйТиИ Экспо Интернешнл» (далее – «Общество») свое согласие на автоматизированную, неавтоматизированную и смешанную обработку, в том числе сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование и уничтожение моих персональных данных, передаваемых мною (ФИО, место работы, должность, телефон, адрес электронной почты и пр.), с целью обеспечения моего участия в выставке DairyTech, получения обратной связи, направления мне информационных материалов, обеспечения моего общения с участниками и посетителями выставки. 
+            </p>
+            <p class="form__description">
+                Подтверждаю, что ознакомлен и согласен с (1) <a href="#" class="form__link">Политикой обработки и обеспечения безопасности персональных данных</a> (2) и <a href="#" class="form__link">Правилами посещения мероприятий</a>, организуемых ООО «АйТиИ Экспо Интернешнл».
+            </p>
+        </div>
+        <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+
+    <script src="js/validation.js"></script>
+</body>
+</html>
